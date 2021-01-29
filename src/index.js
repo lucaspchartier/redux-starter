@@ -6,5 +6,14 @@ const person = {
     }
 };
 
-const updated = { ...person, name: "Bob" };
-console.log(updated);
+const updated = {
+    ...person,
+    address: {
+        ...person.address,
+        city: "Los Angeles"
+    },
+    name: "Bob"
+};
+
+person.address.city = "Los Angeles";
+console.log(person);
