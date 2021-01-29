@@ -1,19 +1,5 @@
-const person = {
-    name: "John",
-    address: {
-        country: "United States",
-        city: "Boston"
-    }
-};
+const numbers = [1, 2, 3];
 
-const updated = {
-    ...person,
-    address: {
-        ...person.address,
-        city: "Los Angeles"
-    },
-    name: "Bob"
-};
-
-person.address.city = "Los Angeles";
-console.log(person);
+// Adding
+const added = [...numbers, 4];
+console.log(added);
