@@ -1,4 +1,6 @@
-let book = { title: "Harry Potter" };
+import { Map } from 'immutable';
+
+let book = Map({ title: "Harry Potter" });
 
 const publish = book => {
     book.isPublished = true;
