@@ -13,5 +13,7 @@ const reducer = (state = [], action) => {
             ];
         case "bugRemoved":
             state.filter(bug => bug.id !== action.payload.id);
+        default:
+            return state;
     }
 };
