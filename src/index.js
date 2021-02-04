@@ -1,3 +1,3 @@
 import store from "./source";
 
-console.log(store);
+console.log(store.getState());
