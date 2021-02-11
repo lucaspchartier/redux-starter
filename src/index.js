@@ -1,5 +1,5 @@
 import store from "./source";
-import bugAdded from "./actions";
+import * as bugActions from "./actions";
 
 // 1. state = reducer(state, action);
 // 2. notify subscribers
@@ -8,13 +8,10 @@ const unsubscribe = store.subscribe(() => {
     console.log("Store changed!", store.getState());
 });
 
-store.dispatch(bugAdded("Bug 1"));
+store.dispatch(bugActions.bugAdded("Bug 1"));
 
 unsubscribe();
 
-store.dispatch({
-    type: actions.BUG_REMOVED,
-    id: 1
-});
+store.dispatch(bugActions.bugRemoved("Bug 1"));
 
 console.log(store.getState());
