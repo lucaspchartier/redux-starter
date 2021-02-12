@@ -12,6 +12,8 @@ store.dispatch(bugActions.bugAdded("Bug 1"));
 
 unsubscribe();
 
-store.dispatch(bugActions.bugRemoved("Bug 1"));
+store.dispatch(bugActions.bugResolved("Bug 1"));
 
 console.log(store.getState());
+
+store.dispatch(bugActions.bugRemoved("Bug 1"));
