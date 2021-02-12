@@ -13,6 +13,13 @@ export default function reducer(state = [], action) {
                     resolved: false
                 }
             ];
+        case actions.BUG_RESOLVED:
+            return [
+                ...state,
+                {
+                    resolved: true
+                }
+            ];
         case actions.BUG_REMOVED:
             return state.filter(bug => bug.id !== action.id);
         default:
