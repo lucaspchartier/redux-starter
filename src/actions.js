@@ -7,8 +7,12 @@ export const bugAdded = description => ({
     }
 });
 
-export const bugResolved = () => ({
+export const bugResolved = id => ({
     type: actions.BUG_RESOLVED,
+    payload: {
+        id: id,
+        resolved: true
+    }
 });
 
 export const bugRemoved = description => ({
