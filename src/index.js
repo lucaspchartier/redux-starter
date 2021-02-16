@@ -12,7 +12,7 @@ store.dispatch(bugActions.bugAdded("Bug 1"));
 
 unsubscribe();
 
-store.dispatch(bugActions.bugResolved());
+store.dispatch(bugActions.bugResolved(1));
 
 console.log(store.getState());
 
