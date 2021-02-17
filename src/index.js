@@ -16,4 +16,4 @@ store.dispatch(bugActions.bugResolved(1));
 
 console.log(store.getState());
 
-store.dispatch(bugActions.bugRemoved("Bug 1"));
+store.dispatch(bugActions.bugRemoved(1));
