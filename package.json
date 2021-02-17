@@ -15,11 +15,6 @@
     "webpack-dev-server": "3.10.3"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "immer": "^8.0.1",
-    "immutable": "^4.0.0-rc.12",
-=======
->>>>>>> redux-app
     "lodash": "^4.17.20",
     "redux": "^4.0.5"
   }
